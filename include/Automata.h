@@ -5,21 +5,18 @@
 using std::string;
 
 class Automata {
-private:
-    enum State
-    {
-        OFF, WAIT, ACCEPT, CHECK, COOK
-    };
+ private:
+    enum State { OFF, WAIT, ACCEPT, CHECK, COOK };
     double _amount = 0;
     string menu[2] = { "Coffee" , "Tea" };
     int prices[2] = { 100, 200 };
     State state = OFF;
     int _selectedMenu;
 
-public:
-    void On(); 
+ public:
+    void On();
     void Off();
-    void AddCoin(int money); 
+    void AddCoin(int money);
     string* ReturnChoisenMenu();
     State GetState() { return state; }
     void ChoiceMenu(int ch);
@@ -28,3 +25,5 @@ public:
     void Cook();
     void Finish(int f);
 };
+
+
