@@ -32,7 +32,7 @@ TEST(task3, test3) {
 TEST(task4, test4) {
     Automata fourth = Automata();
     fourth.On();
-    fourth.Coin(100);
+    fourth.AddCoin(100);
     fourth.ChoiceMenu(2);
     fourth.AddCoin(100);
     fourth.ChoiceMenu(2);
