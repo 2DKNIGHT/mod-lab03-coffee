@@ -16,7 +16,7 @@ TEST(task2, test2) {
     second.On();
     second.AddCoin(1);
     second.ChoiceMenu(1);
-    int result = a.GetState();
+    int result = second.GetState();
     EXPECT_EQ(2, result);
 }
 
@@ -25,7 +25,7 @@ TEST(task3, test3) {
     third.On();
     third.AddCoin(200);
     third.ChoiceMenu(1);
-    int result = a.GetState();
+    int result = third.GetState();
     EXPECT_EQ(4, result);
 }
 
@@ -36,6 +36,6 @@ TEST(task4, test4) {
     fourth.ChoiceMenu(2);
     fourth.AddCoin(100);
     fourth.ChoiceMenu(2);
-    int result = a.GetState();
+    int result = fourth.GetState();
     EXPECT_EQ(4, result);
 }
